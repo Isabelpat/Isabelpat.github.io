@@ -1,0 +1,23 @@
+*{
+font-family:"Oswald", sans-serif;
+}
+
+    
+
+
+
+  
+  .card {
+    width: 18rem; /* Tamaño fijo para todas las tarjetas */
+    margin: 0 15px; /* Espaciado uniforme entre tarjetas */
+  }
+  
+  .card img {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: 200px; /* Ajusta el alto deseado */
+    object-fit: cover; /* Asegura que la imagen mantenga proporción */
+  }
+  
+  
+
+
