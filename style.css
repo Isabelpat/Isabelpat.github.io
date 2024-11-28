@@ -1,18 +1,12 @@
 *{
 font-family:"Oswald", sans-serif;
 }
-
-    
-
-
-
-  
-  .card {
-    width: 18rem; /* Tamaño fijo para todas las tarjetas */
-    margin: 0 15px; /* Espaciado uniforme entre tarjetas */
+.card {
+    width: 25rem; /* Tamaño fijo para todas las tarjetas */
+    margin: 0 18px; /* Espaciado uniforme entre tarjetas */
   }
   
-  .card img {
+.card img {
     width: 100%; /* Ocupa el ancho completo del contenedor */
     height: 200px; /* Ajusta el alto deseado */
     object-fit: cover; /* Asegura que la imagen mantenga proporción */
@@ -20,4 +14,76 @@ font-family:"Oswald", sans-serif;
   
   
 
+.icono-watsapp {
+    font-size: 2rem; /* Aumenta el tamaño del ícono */
+    color: white;    /* Cambia el color del ícono a blanco */
+  }
+  
+.icono-watsapp:hover {
+    color: #25d366; /* Cambia a verde al pasar el cursor */
+  }
+  
+
+  .icono-instagram {
+    font-size: 2rem; /* Aumenta el tamaño del ícono */
+    color: white;    /* Cambia el color del ícono a blanco */
+  }
+  
+  .icono-instagram:hover {
+    color: #b64b97; /* Cambia a verde al pasar el cursor */
+  }
+  .icono-github {
+    font-size: 2rem; /* Aumenta el tamaño del ícono */
+    color: white;    /* Cambia el color del ícono a blanco */
+  }
+  
+.icono-github:hover {
+    color: #060606; /* Cambia a verde al pasar el cursor */
+  }
+  
+
+  .icono-linkedin {
+    font-size: 2rem; /* Tamaño del ícono */
+    color: white;    /* Color blanco */
+  }
+  
+  .icono-linkedin:hover {
+    color: #0077b5; /* Azul característico de LinkedIn al pasar el cursor */
+  }
+
+  .text-creado{
+    background-color: aquamarine;
+    }
+
+    .icon-correo{
+      font-size: 2rem;
+      color:white
+    }
+    .icon-correo:hover{
+      color:#0077b5
+    }
+    .text1-contacto{
+      color:aliceblue
+    }
+
+
+   /* Ajusta el tamaño de los enlaces del menú */
+.nav-pills .nav-link {
+  padding: 0.5rem 1rem; /* Controla el relleno interno de los botones */
+  border-radius: 5px; /* Da un redondeo suave */
+  text-align: center; /* Centra el texto */
+}
+
+/* Botones cuando están activos */
+.nav-pills .nav-link.active {
+  background-color: #198754; /* Fondo verde para el botón activo */
+  color: white; /* Texto blanco */
+}
+
+/* Efecto al pasar el cursor */
+.nav-pills .nav-link:hover {
+  background-color: #198754; /* Fondo verde */
+  color: white; /* Texto blanco */
+  transition: all 0.3s ease; /* Suaviza los cambios */
+}
 
