@@ -1,300 +1,638 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+ <head>
+  <!-- Configuración del juego de caracteres para soporte de caracteres especiales como tildes y eñes -->
+  <meta charset="UTF-8">
 
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=10">
-    
-    <!--link de vostrop-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Configuración para hacer el sitio web responsivo en diferentes tamaños de pantalla -->
+  <meta name="viewport" content="width=device-width, initial-scale=10">
 
-    <!--link de iconos-->
-    <link rel="stylesheet" href="style.css">
+  <!-- Integración de Bootstrap (framework CSS para diseño responsivo y componentes predefinidos) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<!--favicon-->
-<link rel="shortcut icon" href="assets/code-square.svg" type="image/x-icon">
+  <!-- Link a tu archivo de estilos CSS personalizado (para definir colores, fuentes, etc.) -->
+  <link rel="stylesheet" href="style.css">
 
-<!--agragar el link de tipo de letra-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-<!--archivi css linquiando los colores-->
+  <!-- Iconos de Bootstrap (íconos predefinidos para botones, menús, y más) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    
-<title>Patricia Isabel Benitez Ramos</title>
-</head>
-<body style="background-color: rgb(53, 71, 71);">
-     
+  <!-- Favicon: el pequeño ícono que aparece en la pestaña del navegador -->
+  <link rel="shortcut icon" href="assets/code-square.svg" type="image/x-icon">
+
+  <!-- Importación de fuentes desde Google Fonts (en este caso, la fuente 'Oswald') -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <!-- Título de la página: aparece en la pestaña del navegador -->
+  <title>Patricia Isabel Benitez Ramos</title>
+ </head>
+
+ <body style="background-color:#1A1A2E;">
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+
     <!-- Logo y nombre principal -->
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <!-- Ícono al lado del nombre -->
-      <i class="bi bi-file-code-fill p-3"></i>
+      <i class="bi bi-file-code-fill p-3 icono-watsapp"></i>
       <!-- Nombre del sitio o portafolio -->
-      <span class="fs-4">Patricia Isabel Benítez Ramos</span>
+      <span class="fs-4 navegador-color">Patricia Isabel Benítez Ramos</span>
     </a>
-  
-   <!-- Menú de navegación -->
-   <ul class="nav nav-pills">
-    <!--primero enlace dentro de la pag-->
-    <li class="nav-item">
-    <a href="#acerca-de-mi" class="nav-link" aria-current="page">Acerca de mí</a>
-    </li>
-    <!--segundo enlace dentro de la pag-->
-    <li class="nav-item">
-      <a href="#habilidades" class="nav-link">Habilidades</a>
-    </li>
-    <!--tercer enlace dentro de la pag-->
-    <li class="nav-item">
-      <a href="#proyectos" class="nav-link">Proyectos</a>
-    </li>
-    <!--cuarto enlace dentro de la pag-->
-    <li class="nav-item">
-      <a href="#trayectoria-academica" class="nav-link">Trayectoria académica</a>
-    </li>
-    <!--quinto enlace dentro de la pag-->
-    <li class="nav-item">
-      <a href="#contacto" class="nav-link">Contacto</a>
-    </li>
-  </ul>
-  
 
-  
+    <!-- Menú de navegación -->
+    <ul class="nav nav-pills">
+      <!--primero enlace dentro de la pag-->
+      <li class="nav-item">
+        <a href="#acerca-de-mi" class="nav-link" aria-current="page" ;>Acerca de mí</a>
+      </li>
+      <!--segundo enlace dentro de la pag-->
+      <li class="nav-item">
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+      </li>
+      <!--tercer enlace dentro de la pag-->
+      <li class="nav-item">
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+      </li>
+      <!--cuarto enlace dentro de la pag-->
+      <li class="nav-item">
+        <a href="#Insignias" class="nav-link">Cursos e Insignias</a>
+      </li>
+      <!--quinto enlace dentro de la pag-->
+      <li class="nav-item">
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </li>
+    </ul>
 
-  <main>
-    <!--hero- descripción de mi--->
-    <div class="hero">
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <!--foto-->
-      <img class="d-block mx-auto mb-4 rounded-circle" src="assets/likedin.jpeg" alt=""
-      width="200">
-      <h1 class="display-4 fw-bold text-body-emphasis">Patricia Isabel Benítez Ramos</h1>
-      <!--texto typewriter-->
-      <h2 id="app"></h2>
-      <div class="col-lg-6 mx-auto text-success">
-        <p class="lead mb-4">Ingeniera bioquímica, analista de datos y docente con experiencia en diversas áreas, incluyendo laboratorios clínicos, control de calidad, análisis de datos en el sector médico y supervisión ambiental. Es apasionada del café, los paisajes, la lluvia, y disfruta entrenar boxeo .</p>
-        
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4 "style="color: white; background-color: #77ACA2; border-color: #A547CC; boton-cv">CV</button>
+
+
+
+    <main>
+      <!--hero- descripción de mi--->
+      <div class="hero">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+          <!--foto-->
+          <img class="d-block mx-auto mb-4 rounded-circle" src="assets/isa.jpeg" alt="" width="200">
+          <h1 class="display-4 fw-bold nombre-de-presentacion">Patricia Isabel Benítez Ramos</h1>
+          <!--texto typewriter-->
+          <h2 id="app"></h2>
+          <div class="col-lg-6 mx-auto color-text-descripcion">
+            <p class="lead mb-4">Ingeniera bioquímica, analista de datos y docente con experiencia en diversas áreas,
+              incluyendo laboratorios clínicos, control de calidad, análisis de datos en el sector médico y supervisión
+              ambiental. Es apasionada del café, los paisajes y disfruto entrenar boxeo .</p>
+
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                  style="color: white; background-color: #A547CC; border-color: #3498db;"
+                  onclick="window.open('https://drive.google.com/file/d/1ephbdgFiTZvEmPsD3swdysmOrjQVSjV-/view?usp=sharing', '_blank')">
+                  Mi historia profesional CV
+                </button>
+              </div>
+              
+           
+              </div>
+          </div>
+          <div class="overflow-hidden" style="max-height: 30vh;">
+          </div>
         </div>
       </div>
-      <div class="overflow-hidden" style="max-height: 30vh;">
-     </div>
-    </div>
-  </div>
 
-  <!--.......--habilidades--.......-->
-  <div class="habilidades container px-4 py-5" id="habilidades">
-    <h2 class="pb-2 border-bottom" style=color:#3498db;>Habilidades</h2>
-    
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-          <i class="bi bi-laptop-fill p-2"></i> <!--icono de laptop-->
-        </div>
-        <h3 class="fs-2 text-body-emphasis ">Habilidades tecnologicas</h3>
-        <p class="text-success">* Creación de tableros Power BI (uso de DAX).
-          * SQL base de datos y consultas querys.
-          * Mongo DB base de datos y consulta query.
-          *Python 
-          
-        </p>
-        <a href="#" class="icon-link"><font _mstmutation="1">
-          </font><svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-          <i class="bi bi-clipboard-data p-2"></i>
-          <!--icono de carpeta -->
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Habilidades analíticas</h3>
-        <p class="text-success">Análisis de datos.visualización de datos. modelo de datos. Análisis predictivos.</p>
-        <a href="#" class="icon-link"><font _mstmutation="1"></font>
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
-      </div>
-      <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-          <i class="bi bi-wechat p-2 "></i> 
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Habilidades de cominucación</h3>
-        <p class="text-success">Presentación de datos de manera comprensible y efectiva.
-          Presentación de hallazgos.
-          Redacción de informes tecnicos
-        </p>
-        <a href="#" class="icon-link"><font _mstmutation="1"></font>
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
-      </div>
-    </div>
-  </div>
+      <!--.......--habilidades--.......-->
+      <!-- Contenedor principal para la sección de habilidades -->
+      <div class="habilidades container px-4 py-5" id="habilidades">
 
+        <!-- Título de la sección "Habilidades" con estilo de borde inferior y color personalizado -->
+        <h2 class="pb-2 border-bottom" style="color:#3498db;">Habilidades</h2>
 
-<!--proyectos-->
-<div id="proyectos" class="proyectos container mt-5">
- <h2 class="pb-2 border-bottom"style=color:#3498db;>Proyectos</h2>
+        <!-- Contenedor para organizar las habilidades en filas y columnas responsivas -->
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+          <!-- Primera columna: Habilidades tecnológicas -->
+          <div class="feature col">
+
+            <!-- Icono representativo de la habilidad tecnológica (laptop) -->
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+              <i class="bi bi-laptop-fill p-2"></i> <!-- Icono de laptop -->
+            </div>
+
+            <!-- Subtítulo de la habilidad tecnológica -->
+            <h3 class="fs-2 text-body-emphasis">Habilidades tecnológicas</h3>
+
+            <!-- Lista de habilidades tecnológicas -->
+            <p class="text-success">
+              * Creación de tableros Power BI (uso de DAX).<br>
+              * SQL: Bases de datos y consultas queries.<br>
+              * MongoDB: Bases de datos y consultas queries.<br>
+              * Python.
+            </p>
+
+            <!-- Enlace (por ahora vacío, con un ícono de flecha derecha) -->
+            <a href="#" class="icon-link">
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Segunda columna: Habilidades analíticas -->
+          <div class="feature col">
+
+            <!-- Icono representativo de la habilidad analítica (gráfica en carpeta) -->
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+              <i class="bi bi-clipboard-data p-2"></i> <!-- Icono de carpeta -->
+            </div>
+
+            <!-- Subtítulo de la habilidad analítica -->
+            <h3 class="fs-2 text-body-emphasis">Habilidades analíticas</h3>
+
+            <!-- Descripción de habilidades analíticas -->
+            <p class="text-success">
+              * Análisis de datos.<br>
+              * Visualización de datos.<br>
+              * Modelos de datos.<br>
+              * Análisis predictivos.
+            </p>
+
+            <!-- Enlace (por ahora vacío, con un ícono de flecha derecha) -->
+            <a href="#" class="icon-link">
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Tercera columna: Habilidades de comunicación -->
+          <div class="feature col">
+
+            <!-- Icono representativo de la habilidad de comunicación (icono de chat) -->
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+              <i class="bi bi-wechat p-2"></i> <!-- Icono de chat -->
+            </div>
+
+            <!-- Subtítulo de la habilidad de comunicación -->
+            <h3 class="fs-2 text-body-emphasis">Habilidades de comunicación</h3>
+
+            <!-- Descripción de habilidades de comunicación -->
+            <p class="text-success">
+              * Presentación de datos de manera comprensible y efectiva.<br>
+              * Presentación de hallazgos.<br>
+              * Redacción de informes técnicos.
+            </p>
+
+            <!-- Enlace (por ahora vacío, con un ícono de flecha derecha) -->
+            <a href="#" class="icon-link">
+              <svg class="bi">
+                <use xlink:href="#chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!--proyectos-->
+      <!-- Sección de Proyectos -->
+ <div id="proyectos" class="proyectos container mt-5">
+  <!-- Título de la sección -->
+  <h2 class="pb-2 border-bottom" style="color:#3498db;">Proyectos</h2>
+
+  <!-- Contenedor de proyectos en formato responsivo -->
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+ <!-- Tarjeta: Exexo de muertes por COVID-19 latinoamerica -->
+ <div class="col">
+  <div class="card shadow-sm">
+    <img class="card-img-top" src="assets/1proyect.png" alt="Análisis de cohortes">
+    <div class="card-body" style="background-color: #A597CC;">
+      <p class="card-text">"Exceso de muerte covid-19 latinoamerica".</p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+            <a target="_blank" href="" style="color: inherit; text-decoration: none;">Ver</a>
+          </button>
+          <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+            <a target="_blank" href="https://drive.google.com/drive/folders/1rAmHZGwM9Y6_YZZJBkNN4JPfOeX93xFw?usp=sharing" style="color: inherit; text-decoration: none;">GitHub</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+    <!-- Tarjeta: Detección de fraudes bancarios -->
     <div class="col">
-      <div class="card shadow-sm bg-secondary-subtle">
-        <!--quitamos svg y ahregamos img-->
-        <img class="bd-placeholder-img card-img-top" src="assets/Captura de pantalla 2024-11-21 193149.png" alt=""> 
-        <div class="card-body">
-          <p class="card-text">Clon de pinterest.</p>
+      <div class="card shadow-sm">
+        <img class="card-img-top" src="assets/proyect6.png" alt="Detección de fraudes bancarios">
+        <div class="card-body" style="background-color: #A597CC;">
+          <p class="card-text">Detección de fraudes bancarios utilizando Google Bigquery y power BI.</p>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank" href="">Ver</a></button>
-              <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank" href="https://github.com/Isabelpat?tab=repositories">GitHub</a></button>
+            <div>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiYWY2MGNkOGMtMGE5OC00YTE0LTk5NWItZThjNGY1NmQxYmRhIiwidCI6ImY5NGJmNGQ5LTgwOTctNDc5NC1hZGY2LWE1NDY2Y2EyODU2MyIsImMiOjR9" style="color: inherit; text-decoration: none;">Ver</a>
+              </button>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://github.com/Isabelpat?tab=repositories" style="color: inherit; text-decoration: none;">Drive</a>
+              </button>
             </div>
-          
           </div>
         </div>
       </div>
     </div>
-    <!-- agregar card -->
+
+      <!-- Tarjeta: Clon de Pinterest -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <img class="card-img-top" src="assets/pinterest.png" alt="Clon de Pinterest">
+          <div class="card-body" style="background-color: #A597CC;">
+            <p class="card-text">Clon de Pinterest.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                  <a target="_blank" href="https://pinterest-clon1.vercel.app/" style="color: inherit; text-decoration: none;">Ver</a>
+                </button>
+                <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                  <a target="_blank" href="https://github.com/Isabelpat/clon-pinteres" style="color: inherit; text-decoration: none;">GitHub</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Tarjeta: -ecomerce -->
     <div class="col">
-      <div class="card shadow-sm bg-secondary-subtle">
-        <!--quitamos svg y ahregamos img-->
-        <img class="bd-placeholder-img card-img-top" src="assets/2.png" alt=""> 
-        <div class="card-body">
-          <p class="card-text">Mi primera pagina.</p>
+      <div class="card shadow-sm">
+        <img class="card-img-top" src="assets/ecomerce.png" alt="Análisis de e-commerce">
+        <div class="card-body" style="background-color: #A597CC;">
+          <p class="card-text">Análisis de ventas y comportamiento del cliente en e-commerce.</p>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank" href="">Ver</a></button>
-              <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank" href="https://github.com/Isabelpat?tab=repositories">GitHub</a></button>
+            <div>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="#" style="color: inherit; text-decoration: none;">Ver</a>
+              </button>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://github.com/Isabelpat?tab=repositories" style="color: inherit; text-decoration: none;">GitHub</a>
+              </button>
             </div>
-            <small class="text-body-secondary">9 mins</small>
           </div>
         </div>
       </div>
     </div>
-    <!-- agregar card -->
-    <div class="col ">
-      <div class="card shadow-sm bg-secondary-subtle">
-        <!--quitamos svg y ahregamos img-->
-        <img class="bd-placeholder-img card-img-top" src="assets/3.jpg" alt=""> 
-        <div class="card-body text-">
-          <p class="card-text">Portafolio.</p>
+
+    <!-- Tarjeta: analisis por cojortes -->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="card-img-top" src="assets/2proyectcojorts.png" alt="Cancelación hotelera">
+        <div class="card-body" style="background-color: #A597CC;">
+          <p class="card-text">Analisis por cojortes retencion mes y trimestre.</p>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank" href="">Ver</a></button>
-              <button type="button" class="btn btn-sm btn-outline-secondary"><a target="_blank" href="https://github.com/Isabelpat?tab=repositories">GitHub</a></button>
-            </div>
-            <small class="text-body-secondary">9 mins</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- fin-->
-   
-    
-    
-    <!--caurcel de testimonios --> 
-    <div class="container mt-5">
-  <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
-    <h2 class="pb-2 border-bottom"style=color:#3498db;>Recomendaciones</h2>
-    <div class="carousel-inner">
-      <!-- Primer item activo -->
-      <div class="carousel-item active">
-        <div class="d-flex justify-content-center">
-          <!-- Card -->
-          <div class="card">
-            <img src="assets/3.jpg" class="card-img-top rounded-circle" alt="imagen de testimonio">
-            <h5 class="card-title">Mentora Tecnolochicas</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Tecnolochicas</h6>
-            <div class="card-body">
-              <p class="card-text">Muestra un rápido progreso en la adquisición de habilidades técnicas clave y una gran disposición.</p>
-            </div>
-          </div>
-          <!-- Fin card -->
-        </div>
-      </div>
-      <!-- Segundo item -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-          <div class="card">
-            <img src="assets/2.png" class="card-img-top rounded-circle" alt="imagen de testimonio">
-            <h5 class="card-title">Profesor de Box</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Entrenador</h6>
-            <div class="card-body">
-              <p class="card-text">El contenido del testimonio del profesor.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Tercer item -->
-      <div class="carousel-item">
-        <div class="d-flex justify-content-center">
-          <div class="card">
-            <img src="assets/3.jpg" class="card-img-top rounded-circle" alt="imagen de testimonio">
-            <h5 class="card-title">Otro título</h5>
-            <h6 class="card-subtitle mb-2 text-body-secondary">Otro subtítulo</h6>
-            <div class="card-body">
-              <p class="card-text">Ejemplo de contenido adicional.</p>
+            <div>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://drive.google.com/drive/folders/1bCFbYZrUoYjuyLwDop-MZa1012h_sAAO?usp=sharing" style="color: inherit; text-decoration: none;">Ver</a>
+              </button>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://github.com/Isabelpat/Isabelpat" style="color: inherit; text-decoration: none;">GitHub</a>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Controles del carrusel -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
+
+    <!-- Tarjeta: primera pagina html-->
+    <div class="col">
+      <div class="card shadow-sm">
+        <img class="card-img-top" src="assets/primera pag.png" alt="Análisis de cohortes">
+        <div class="card-body" style="background-color: #A597CC;">
+          <p class="card-text">La primera pagina que realice en HTML, CSS.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="" style="color: inherit; text-decoration: none;">Ver</a>
+              </button>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://github.com/Isabelpat/primer_pag" style="color: inherit; text-decoration: none;">GitHub</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Tarjeta: agenda-->
+     <div class="col">
+      <div class="card shadow-sm">
+        <img class="card-img-top" src="assets/agenda.png" alt="Análisis de cohortes">
+        <div class="card-body" style="background-color: #A597CC;">
+          <p class="card-text">Aplicación para agendar tareas.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://agenda-three-livid.vercel.app/" style="color: inherit; text-decoration: none;">Ver</a>
+              </button>
+              <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                <a target="_blank" href="https://github.com/Isabelpat/Agenda" style="color: inherit; text-decoration: none;">GitHub</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <!-- Tarjeta: cancelación hotelera-->
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="card-img-top" src="assets/cancelación-hotelera.png" alt="Análisis de cohortes">
+            <div class="card-body" style="background-color: #A597CC;">
+              <p class="card-text">Analisis y predición de cancelaciones hoteleras usando python.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                    <a target="_blank" href="https://drive.google.com/file/d/1zsHO8ruDnWf5XuG-69yBuEYf1nNqKzH8/view?usp=sharing" style="color: inherit; text-decoration: none;">Ver</a>
+                  </button>
+                  <button type="button" class="btn btn-sm" style="background-color: black; color: white;">
+                    <a target="_blank" href="https://drive.google.com/drive/folders/1kmn_169OLcs0Wk-H1tE0p58OcGAIY1Od?usp=sharing" style="color: inherit; text-decoration: none;">Drive</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+ </div>
+
+            <!-- fin-->
+
+ <!--elemento para insignias-->
+ <!-- Elemento para insignias -->
+ <div id="Insignias" class="container mt-5">
+  <h2 class="pb-3 border-bottom" style="color:#3498db;">Cursos e Insignias</h2>
+  
+  <div class="row justify-content-center">
+    
+    <!-- Cuadro gris claro principal -->
+    <div class="col-md-10 p-4 mb-4" style="background-color: #3c5851;">
+      <!-- Título principal -->
+      <h2 class="fst-italic text-center mb-4" style="font-size:20px; color: aquamarine;" >Insignias Digitales</h2>
+
+      <!-- Subtítulo -->
+      <div class="row">
+        <div class="col-12 mb-4" style="background-color: #4b3b59;">
+          <div class="p-4 bg-body-tertiary rounded shadow text-center">
+            <h4 class="fst-italic" style="font-size: 16px;">Click en la imagen para ver la insignia</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 ciencia de datos-->
+      <div class="row" style="background-color: #4b3b59;">
+      <div class="col-md-4 mb-4">
+        <div class="p-4 bg-body-tertiary rounded shadow"  >
+          <h4 class="fst-italic text-center st " >Ciencia de datos con Python - Visualización</h4>
+          <a href="https://www.acreditta.com/credential/6761c270-3173-42cb-b6f7-c31e98206138?utm_source=linkedin_post&resource_type=badge&resource=6761c270-3173-42cb-b6f7-c31e98206138" 
+             class="text-decoration-none d-block text-center "  style="background-color: #3c5851;"
+             target="_blank">
+            <img src="assets/cientifico de datos.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto; " >
+          </a>
+        </div>
+      </div>
+
+        <!--  2 mongodb -->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-body-tertiary rounded shadow">
+            <h4 class="fst-italic text-center">MongoDB- basico</h4>
+            <a href="https://www.udemy.com/certificate/UC-f1971859-6573-4f8b-b7fd-05f033e50b3b/" 
+               class="text-decoration-none d-block text-center" 
+               style="background-color: #3c5851;" target="_blank">
+              <img src="assets/mongodbudemi.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto;">
+            </a>
+          </div>
+        </div>
+
+ <!--3 Data analytics and Visualization Camp-->
+ <div class="col-md-4 mb-4">
+  <div class="p-4 bg-body-tertiary rounded shadow">
+    <h4 class="fst-italic text-center">Data analytics and Visualization Camp</h4>
+    <a href="https://www.credly.com/badges/5de0865f-2f4f-4e24-ad72-03c01f74ab5d/linked_in?t=ri801l" 
+       class="text-decoration-none d-block text-center"
+       style="background-color: #3c5851;" target="_blank">
+      <img src="assets/datanalist.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto;">
+    </a>
   </div>
 </div>
-
-    <!--contactame-->
-    <div id="contacto" class="px-4 py-5 my-5 text-center mt-5">
-      <h2 class="pb-2 border-bottom"style=color:#3498db;>AQUÍ</h2>
-      <i class="d-block mx-auto mb-4 fs-1 bi bi-chat-right-text icon-correo"></i>
-      <h1 class="display-5 fw-bold text-body-emphasis" _msttexthash="244114" _msthash="7">CONTACTAME</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4 text1-contacto">Envia  un .</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <a href="mailto:brpisabel@gmail.com">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3 " style="color: white; background-color: #77ACA2; border-color: #A547CC;_msttexthash="277784" _msthash="9">Coreo electronico</button>
-        </a>
+        <!-- 4 python-->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-body-tertiary rounded shadow">
+            <h4 class="fst-italic text-center">Análisis de datos con pandas-python </h4>
+            <a href="https://www.udemy.com/certificate/UC-424da76b-d285-43b9-ad2a-253e1d3cd574/" 
+               class="text-decoration-none d-block text-center" 
+               style="background-color: #3c5851;" target="_blank">
+              <img src="assets/paython udemi.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto;">
+            </a>
+          </div>
         </div>
-      </div>
+        <!--5 dax power bi-->
+        <div class="col-md-4 mb-4">
+          <div class="p-4 bg-body-tertiary rounded shadow">
+            <h4 class="fst-italic text-center">Advanced DAX for Microsoft Power BI </h4>
+            <a href="https://www.udemy.com/certificate/UC-42f69c11-763b-484d-9e17-bb186260c0dc/" 
+               class="text-decoration-none d-block text-center" 
+               style="background-color: #3c5851;" target="_blank">
+              <img src="assets/dax powerbi.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto;">
+            </a>
+          </div>
+        </div>
+ <!--6 power bi intelligence -->
+ <div class="col-md-4 mb-4">
+  <div class="p-4 bg-body-tertiary rounded shadow">
+    <h4 class="fst-italic text-center">Power BI y Business intelligence </h4>
+    <a href="https://www.udemy.com/certificate/UC-e1df64cf-3d97-4da4-91e1-edde63873f3a/" 
+       class="text-decoration-none d-block text-center" 
+       style="background-color: #3c5851;" target="_blank">
+      <img src="assets/powerbi intelligent.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto;">
+    </a>
+  </div>
+ </div>
+  <!--7estadisctica para no estadistica -->
+  <div class="col-md-4 mb-4">
+    <div class="p-4 bg-body-tertiary rounded shadow">
+      <h4 class="fst-italic text-center">Estadística para no estadísticos</h4>
+      <a href="https://www.udemy.com/certificate/UC-1b5e9d91-e6b5-4ae0-a506-576992a296e9/" 
+         class="text-decoration-none d-block text-center" 
+         style="background-color: #3c5851;" target="_blank">
+        <img src="assets/estadistica.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto;">
+      </a>
     </div>
-  
-    
-  </main>
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      
-      <li class="nav-item">
-        <a href="https://www.linkedin.com/in/patricia-isabel-b-83a61613a/" class="nav-link px-2 text-body-secondary p-2">
-          <i class="bi bi-linkedin icono-linkedin"></i>
-        </a>
-      </li>
-      
-      
-      <li class="nav-item"><a href="https://github.com/Isabelpat?tab=repositories" class="nav-link px-2 text-body-secondary"><i class="bi bi-github p-2 icono-github"></i></a></li>
+  </div>
 
-      <li class="nav-item"><a href="https://www.instagram.com/isa.1840/" class="nav-link px-2 text-body-secondary"><i class="bi bi-instagram p-2 icono-instagram"></i></a></li>
+ <!--8 linkedin crea tú marca personal de éxito -->
+ <div class="col-md-4 mb-4">
+  <div class="p-4 bg-body-tertiary rounded shadow">
+    <h4 class="fst-italic text-center">Linkedin.Crea tú marca personal de éxito</h4>
+    <a href="https://www.udemy.com/certificate/UC-4dba943e-a6a1-4341-a1ce-28539e152cfe/" 
+   class="text-decoration-none d-block text-center" 
+   style="background-color: #3c5851;" target="_blank">
+  <img src="assets/likdin.png" alt="Certificación Front End" class="img-fluid" style="max-height: 200px; width: auto;">
+</a>
 
-      <li class="nav-item"><a href="https://wa.me/<5564753161>" class="nav-link px-2 text-body-secondary"><i class="bi bi-whatsapp p-2 icono-watsapp"></i></a></li>
-      
-      
-    </ul>
-    <p class="text-center text-body-secondary text-creado">Creado por Patricia Isabel Benitez Ramos</p>
-    <a href="https://tecnolochicas.mx/">Tecnolochicas</a>
-  </footer>
+  </div>
+  </div>
+  <!--se puede agregar mas elemento despues de este-->
+      </div><!--fin row insignias-->
+    </div><!--fin col-md-10-->
+  </div><!--fin row justify-content center-->
+ </div>
 
 
-<!--booststrap-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <!--cdn typewriter que nos mando en git-->
-      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<!--main.js-->
-<script src="main.js"></script>
 
-</body>
+ <!--fin-->
+            <!--caurcel de testimonios -->
+            <div class="container mt-5">
+             <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
+                <h2 class="pb-2 border-bottom" style=color:#3498db;>Reconocimientos y Diplomas</h2>
+                <div class="carousel-inner">
+                  <!-- Primer item activo -->
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                      <!-- Card -->
+                      <div class="card">
+                        <img src="assets/congreso.png" class="card-img-top " alt="imagen de testimonio">
+                        <h5 class="card-title">congreso</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">AMIDIC</h6>
+                        <div class="card-body">
+                          <p class="card-text">PRESENTACIÓN DE PROYECTO DONDE SE OTORGA EL 3 LUGAR EN PRESENTACIÓN DE CARTEL .</p>
+                        </div>
+                      </div>
+                      <!-- Fin card -->
+                    </div>
+                  </div>
+                  <!-- Segundo item -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="card">
+                        <img src="assets/proyecto maestria.png" class="card-img-top " alt="imagen de testimonio">
+                        <h5 class="card-title">Reconocimiento</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Congreso sustentabilidad</h6>
+                        <div class="card-body">
+                          <p class="card-text">PRIMER LUGAR POR EL PROYECTO DE TESIS.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Tercer item -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="card">
+                        <img src="assets/beca-telmex.png" class="card-img-top " alt="imagen de testimonio">
+                        <h5 class="card-title">diploma</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">por beca de exelencia </h6>
+                        <div class="card-body">
+                          <p class="card-text">POR EL PROMEDIO DE 9.9 EN LA MASTRIA.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- CUARTO item -->
+                    <div class="carousel-item">
+                      <div class="d-flex justify-content-center">
+                        <div class="card">
+                          <img src="assets/cctierra.png" class="card-img-top " alt="imagen de testimonio">
+                          <h5 class="card-title">Reconocimiento</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Apoyo a ciencia de la tierra </h6>
+                          <div class="card-body">
+                            <p class="card-text">LIDERARA PROYECTO PARA EL ENECUENTRO DE CIENCIAS DE LA TIERRA, ARTE Y HUMANIDADES.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- Segundo item -->
+                  <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                      <div class="card">
+                        <img src="assets/fotonica.png" class="card-img-top " alt="imagen de testimonio">
+                        <h5 class="card-title">Reconocimiento</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Curso de fotonica</h6>
+                        <div class="card-body">
+                          <p class="card-text">CURSO DE FOTONICA APLICADA.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </div>
+
+            <!--contactame-->
+            <div id="contacto" class="px-4 py-5 my-5 text-center mt-5">
+              <h2 class="pb-2 border-bottom" style=color:#3498db;>AQUÍ</h2>
+              <i class="d-block mx-auto mb-4 fs-1 bi bi-chat-right-text icon-correo"></i>
+              <h1 class="display-5 fw-bold text-body-emphasis" _msttexthash="244114" _msthash="7">CONTACTAME</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 text1-contacto">Envia un .</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <a href="mailto:brpisabel@gmail.com">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3" 
+        style="color: white; background-color: #77ACA2; border-color: #A547CC;">
+  Correo electrónico
+</button>
+
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+    </main>
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/patricia-isabel-b-83a61613a/"
+            class="nav-link px-2 text-body-secondary p-2">
+            <i class="bi bi-linkedin icono-linkedin"></i>
+          </a>
+        </li>
+
+
+        <li class="nav-item"><a href="https://github.com/Isabelpat?tab=repositories"
+            class="nav-link px-2 text-body-secondary"><i class="bi bi-github p-2 icono-github"></i></a></li>
+
+        <li class="nav-item"><a href="https://www.instagram.com/isa.1840/" class="nav-link px-2 text-body-secondary"><i
+              class="bi bi-instagram p-2 icono-instagram"></i></a></li>
+
+        <li class="nav-item"><a href="https://wa.me/<5564753161>" class="nav-link px-2 text-body-secondary"><i
+              class="bi bi-whatsapp p-2 icono-watsapp"></i></a></li>
+
+
+
+      </ul>
+      <p class="text-center text-body-secondary text-creado">Creado por Patricia Isabel Benitez Ramos</p>
+      <a href="https://tecnolochicas.mx/">Tecnolochicas</a>
+    </footer>
+
+
+    <!--booststrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <!--cdn typewriter que nos mando en git-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!--main.js-->
+    <script src="main.js"></script>
+
+ </body>
 </html>

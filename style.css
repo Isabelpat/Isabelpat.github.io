@@ -1,89 +1,117 @@
-*{
-font-family:"Oswald", sans-serif;
+/* Establece la fuente para todos los elementos */
+* {
+  font-family: "Oswald", sans-serif;
 }
+
+/* Estilo para las tarjetas */
 .card {
-    width: 25rem; /* Tamaño fijo para todas las tarjetas */
-    margin: 0 18px; /* Espaciado uniforme entre tarjetas */
-  }
-  
+  width: 25rem; /* Tamaño fijo para todas las tarjetas */
+  margin: 0 18px; /* Espaciado uniforme entre tarjetas */
+}
+
+/* Estilo de imagen dentro de las tarjetas */
 .card img {
-    width: 100%; /* Ocupa el ancho completo del contenedor */
-    height: 200px; /* Ajusta el alto deseado */
-    object-fit: cover; /* Asegura que la imagen mantenga proporción */
-  }
-  
-  
+  width: 100%; /* Ocupa el ancho completo del contenedor */
+  height: 200px; /* Ajusta el alto deseado */
+  object-fit: cover; /* Asegura que la imagen mantenga proporción */
+}
 
+/* Estilo para los íconos de redes sociales */
 .icono-watsapp {
-    font-size: 2rem; /* Aumenta el tamaño del ícono */
-    color: white;    /* Cambia el color del ícono a blanco */
-  }
-  
+  font-size: 2rem; /* Aumenta el tamaño del ícono */
+  color: white; /* Cambia el color del ícono a blanco */
+}
+
 .icono-watsapp:hover {
-    color: #25d366; /* Cambia a verde al pasar el cursor */
-  }
-  
+  color: #25d366; /* Cambia a verde al pasar el cursor */
+}
 
-  .icono-instagram {
-    font-size: 2rem; /* Aumenta el tamaño del ícono */
-    color: white;    /* Cambia el color del ícono a blanco */
-  }
-  
-  .icono-instagram:hover {
-    color: #b64b97; /* Cambia a verde al pasar el cursor */
-  }
-  .icono-github {
-    font-size: 2rem; /* Aumenta el tamaño del ícono */
-    color: white;    /* Cambia el color del ícono a blanco */
-  }
-  
+.icono-instagram {
+  font-size: 2rem; /* Aumenta el tamaño del ícono */
+  color: white; /* Cambia el color del ícono a blanco */
+}
+
+.icono-instagram:hover {
+  color: #b64b97; /* Cambia a color característico de Instagram al pasar el cursor */
+}
+
+.icono-github {
+  font-size: 2rem; /* Aumenta el tamaño del ícono */
+  color: white; /* Cambia el color del ícono a blanco */
+}
+
 .icono-github:hover {
-    color: #060606; /* Cambia a verde al pasar el cursor */
-  }
-  
+  color: #060606; /* Cambia a color oscuro al pasar el cursor */
+}
 
-  .icono-linkedin {
-    font-size: 2rem; /* Tamaño del ícono */
-    color: white;    /* Color blanco */
-  }
-  
-  .icono-linkedin:hover {
-    color: #0077b5; /* Azul característico de LinkedIn al pasar el cursor */
-  }
+.icono-linkedin {
+  font-size: 2rem; /* Tamaño del ícono */
+  color: white; /* Color blanco */
+}
 
-  .text-creado{
-    background-color: aquamarine;
-    }
+.icono-linkedin:hover {
+  color: #0077b5; /* Azul característico de LinkedIn al pasar el cursor */
+}
 
-    .icon-correo{
-      font-size: 2rem;
-      color:white
-    }
-    .icon-correo:hover{
-      color:#0077b5
-    }
-    .text1-contacto{
-      color:aliceblue
-    }
+.icon-correo {
+  font-size: 2rem; /* Tamaño del ícono */
+  color: white; /* Color blanco */
+}
 
+.icon-correo:hover {
+  color: #0077b5; /* Cambia a azul al pasar el cursor */
+}
 
-   /* Ajusta el tamaño de los enlaces del menú */
+/* Estilo de texto en la sección de contacto */
+.text-creado {
+  background-color: aquamarine; /* Fondo color aguamarina */
+}
+
+.text1-contacto {
+  color: aliceblue; /* Color azul claro */
+}
+
+/* Estilo para los enlaces del menú */
 .nav-pills .nav-link {
   padding: 0.5rem 1rem; /* Controla el relleno interno de los botones */
   border-radius: 5px; /* Da un redondeo suave */
   text-align: center; /* Centra el texto */
 }
 
-/* Botones cuando están activos */
+/* Botones activos en el menú */
 .nav-pills .nav-link.active {
   background-color: #198754; /* Fondo verde para el botón activo */
   color: white; /* Texto blanco */
 }
 
-/* Efecto al pasar el cursor */
+/* Efecto al pasar el cursor sobre los enlaces del menú */
 .nav-pills .nav-link:hover {
   background-color: #198754; /* Fondo verde */
   color: white; /* Texto blanco */
   transition: all 0.3s ease; /* Suaviza los cambios */
 }
 
+/* Estilo para el nombre en texto */
+.color-nombre {
+  color: antiquewhite; /* Color de nombre */
+}
+
+/* Estilo de los enlaces generales */
+.nav-link {
+  color: #E4E4E4; /* Blanco suave */
+}
+
+/* Color del texto en la sección de navegación */
+.navegador-color {
+  color: rgb(205, 236, 236); /* Color claro para la navegación */
+}
+
+/* Estilo para los textos de descripción */
+.color-text-descripcion {
+  color: #E4E4E4; /* Blanco suave */
+}
+
+/* Color para el nombre de presentación */
+.nombre-de-presentacion {
+  color: #A597CC; /* Color lila para la presentación */
+}
