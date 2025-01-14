@@ -29,3 +29,27 @@ typewriter
   .typeString('<span style="color: #E79968;"><strong>Científica de datos</strong></span>')
   .pauseFor(2500)
   .start();
+
+
+
+  
+  // Mostrar el botón cuando el usuario desplace hacia abajo
+window.onscroll = function() {
+  const boton = document.getElementById("volverAlInicio");
+  
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    // Si el desplazamiento es mayor que 300px, mostramos el botón
+    boton.style.display = "block";
+  } else {
+    // Si el desplazamiento es menor, lo ocultamos
+    boton.style.display = "none";
+  }
+};
+
+// Agregar el comportamiento de desplazamiento suave al hacer clic en el botón
+document.getElementById("volverAlInicio").addEventListener("click", function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+

@@ -115,3 +115,29 @@
 .nombre-de-presentacion {
   color: #A597CC; /* Color lila para la presentación */
 }
+
+/* Botón "↑ Inicio" junto al título */
+#boton-inicio {
+  background-color: #007BFF; /* Fondo azul */
+  color: white; /* Texto blanco */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 14px; /* Tamaño de fuente */
+  transition: background-color 0.3s ease; /* Transición para hover */
+}
+
+#volverAlInicio {
+  position: fixed;
+  bottom: 20px;  /* 20px de margen desde el fondo */
+  right: 20px;   /* 20px de margen desde la derecha */
+  z-index: 1000; /* Asegura que el botón esté encima de otros elementos */
+  border-radius: 50%;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  display: none; /* Inicialmente oculto */
+}
+
+
+  
